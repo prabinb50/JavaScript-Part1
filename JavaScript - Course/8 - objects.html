@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <script>
+        const product = {
+            name: 'socks',
+            price: '1090'
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        //to change the value inside an object
+        product.name = 'fiber socks'
+        console.log(product);
+
+        // also add the value inside an object
+        product.newProperty = true;
+        console.log(product);
+
+        // remove value form an object
+        delete product.newProperty;
+        console.log(product);
+
+        // another way of accessing values inside objects which is using square braket
+        const product2 = {
+            name: 'pant',
+            rating: {
+                stars: 4.5,
+                count: 87
+            },
+            // function inside object = method
+            fun: function fuction1(){
+                console.log('function inside object');
+            }
+        };
+        console.log(product2['name']);
+
+        // inside an object, we can save any type of value
+        console.log(product2.rating.count); 
+
+        product2.fun();
+
+        //convert js object into JSON
+        console.log(JSON.stringify(product2));
+
+        //convert js object into JSON
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString));
+
+
+        // AUTO-BOXING
+        console.log('hello'.length);
+        console.log('prabin'.toUpperCase()); // this feature called auto-boxing because js automically wraps the string in an object like a box
+        // NOTE: auto-boxing also works with numbers and booleans. But, it doesnot work with null or undefined.
+
+
+        
+        
+        //OBJECTS ARE REFERENCES....IMPORTANT ONE
+        const object1 = {
+            message: 'hello'
+        };
+        const object2 = object1; //copying the refrence
+
+        object1.message = 'Good job!'; // change the value of an object....and eventhough we use const, we can also change the value.
+        console.log(object1);
+        console.log(object2); // object2 has same reference as the object1
+
+        // we cant compare the objects directly eventhough they have the same values inside
+        const object3 = {
+            message: 'Good job'
+        };
+        console.log(object1 === object3);
+        // we can compare the objects if two varibles have the same refrence
+        console.log(object1 === object2);
+
+
+
+        // SHORTCUTS IN OBJECTS
+        // destruction
+        const object4 = {
+            message: 'Good job',
+            price: 899
+        };
+        // const message = message;
+        const { message, price } = object4;
+        console.log(message);
+        console.log(price);
+
+        // shorthand property
+        const object5 = {
+            // message: message
+            message
+        };
+        console.log(object5);
+
+        // shorthand method
+        const object6 = {
+            // message: message
+            message,
+            //method: function fuction2 (){
+            //    console.log('method');
+            //}
+            method (){
+                console.log('method');
+            }
+        };
+        console.log(object6);
+        object6.method();
+    </script>
+</body>
+</html>

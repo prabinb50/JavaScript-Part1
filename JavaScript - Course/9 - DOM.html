@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- this is a page -->
+    <button>hello</button>
+    <button class="js-button">Second button</button>
+    <script>
+        /*
+        // document object and webpage are linked together
+       document.body.innerHTML = 'hello'; // this code removes eveything in the page and replaces with a text with hello.
+       document.title = 'Good job!'; // this code removes the name of webpage.*/
+
+
+        /*
+       // first property
+       console.log(document.title);
+       document.title = 'changed';
+
+       // second property
+       console.log(document.body);
+       console.log(typeof document.body);
+
+       console.log(document.body.innerHTML); // innerHTML property controls all the HTML inside the body.
+       document.body.innerHTML = 'changed'; // if we change the innerHTML property, it will the chnage HTML inside the body element.
+       */
+
+       
+
+       // METHOD
+       //document.querySelector(), which means that get any elements from the page and put it inside js
+       console.log(document.querySelector('button').innerHTML);
+       document.querySelector('button').innerHTML = 'changed';
+
+       // using DOM, we can get HTML elements from page and put it inside js and then save it in an variable. 
+       const buttonElement = document.querySelector('.js-button');
+       console.log(buttonElement);
+
+
+    </script>
+</body>
+</html>
