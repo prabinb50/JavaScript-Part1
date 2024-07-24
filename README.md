@@ -1,3 +1,3 @@
-# Welcome to my "javascript-course-part1" repository! This repository is part of an extensive JavaScript course designed to provide a thorough understanding of the language. Inside, you'll find well-structured lessons, detailed explanations, and practical examples that cover everything from basic syntax to more complex programming techniques. This course is structured to be accessible and engaging, ensuring that you gain a solid grasp of JavaScript fundamentals and are well-prepared for more advanced topics in the future. 
+# Welcome to my "javascript-course-part1" repository! 
 
 JavaScript-Part1 is the first part of my JavaScript course. This repository covers essential concepts, basic syntax, and foundational techniques necessary for effective JavaScript programming. Whether you're a beginner or looking to refresh your knowledge, this course provides valuable insights and practical exercises to enhance your skills.
